@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>A World of Art</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="media/favicon.ico" rel="icon" type="image"> <!--Add favicon -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Javascript/main.js" defer></script>
+  </head>
+  <body>
+    <ul class="navbar">
+      <li class="logo"><img src="media/logo.png"></li>
+      <li class="dropdown"><a class="dropbtn" href="index.html">Home</a></li>
+      <li class="dropdown current">
+        <a href="arthome.html">Art</a>
+            <div class="dropdown-content">
+              <a href="telerin.html">Telerin Map</a>
+            </div>
+      </li>
+      <li class="dropdown">
+        <a href="writehome.html" class="dropbtn">Writing</a>
+          <div class="dropdown-content">
+            <a href="Welp.html">Short Stories</a>
+            <a href="Welp.html">Creative Writing</a>
+          </div>
+      </li>
+      <li class="dropdown about"><a href="Welp.html" class="dropbtn">About</a></li>
+    </ul>
+    <div class="welcome">
+      <img src="media/platform.png" class="welcome">
+      <h1 class="welcome">Artistic Endeavors</h1><hr width="50%" class="welcome">
+    </div>
+    <div class="intro">
+      <p class="intro"><br>&nbsp;&nbsp;Home for the artsy side of things.</p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="media/logo.png" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="media/platform.png" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="media/welcome.png" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="media/TelerinThumb.png" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="media/artifact3.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="media/artifact.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="media/artifact1.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="media/artifact2.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+      </div>
+      <div class="column video">
+        <video width="100%" height="100%" muted controls>
+          <source src="media/digitalMedia.mp4">
+      </div>
+      <div class="column">
+      </div>
+    </div>
+    <div class="animate">
+    </div>
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">1 / 8</div>
+          <img src="media/logo.png">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 8</div>
+          <img src="media/platform.png">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 8</div>
+          <img src="media/welcome.png">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 8</div>
+          <img src="media/Telerin.png">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">5 / 8</div>
+          <img src="media/artifact3.jpg">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">6 / 8</div>
+            <img src="media/artifact.jpg">
+        </div>
+          <div class="mySlides">
+            <div class="numbertext">7 / 8</div>
+            <img src="media/artifact1.jpg">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">8 / 8</div>
+            <img src="media/artifact2.jpg">
+          </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+        <div class="column1">
+          <img class="demo cursor" src="media/logo.png" onclick="currentSlide(1)" alt="The Site Logo">
+        </div>
+        <div class="column1">
+          <img class="demo cursor" src="media/platform.png" onclick="currentSlide(2)" alt="Digital Media Assignment">
+        </div>
+        <div class="column1">
+          <img class="demo cursor" src="media/welcome.png" onclick="currentSlide(3)" alt="Scenery from Game Development">
+        </div>
+        <div class="column1">
+          <img class="demo cursor" src="media/TelerinThumb.png" onclick="currentSlide(4)" alt="A Map of Telerin">
+        </div>
+        <div class="column1">
+          <img class="demo cursor" src="media/artifact3.jpg" onclick="currentSlide(5)" alt="A 3D model of a magic artifact">
+        </div>
+        <div class="column1">
+          <img class="demo cursor" src="media/artifact.jpg" onclick="currentSlide(6)" alt="A 3D model of a magic artifact">
+        </div>
+        <div class="column1">
+          <img class="demo cursor" src="media/artifact1.jpg" onclick="currentSlide(7)" alt="A 3D model of a magic artifact">
+        </div>
+        <div class="column1">
+          <img class="demo cursor" src="media/artifact2.jpg" onclick="currentSlide(8)" alt="A 3D model of a magic artifact">
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br>
+    <div class="footer">
+      <p>A Web Development Final Project by David Larsen<br> © David Larsen 2018<br></p><p class="simonsenSaid">Going into this class, I knew some of the basics of html and css, but had never really put them into practice. So, going through this class was a refresher on those basics as well as an opportunity to learn how to use those languages to make a finished product. I learned quite a bit doing the final project, since I had to take the mostly theoretical knowledge that the class had given me prior and actually put it to use.<br>Going into this, I had no idea about anything to do with javascript, so it was a little bit intimidating to go through some of the assignments, but I feel like I learned a good bit about how javascript works, and I'm glad for the experience. I think the biggest thing I learned, besides all the syntax stuff, was that if you have some issue or problem you can't solve, there are resources available to help you find the answer.</p>
+    </div>
+  </body>
+</html>

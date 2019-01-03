@@ -1,0 +1,49 @@
+html{
+  background-color: #c6bcb6;
+}
+ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  width: 200px;
+  background-color: #E0E2E4;
+  color: #625750;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-family: 'Share Tech Mono',monospace;
+}
+li a{
+  display: block;
+  color: #000000;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+li a.active{
+  background-color: #625750;
+  color: #C6BCB6;
+  font-size: 1.25em;
+}
+li a:hover:not(.active){
+  background-color: #96897f;
+  color: #E0E2E4;
+  text-align: right;
+  padding: 8px 1px;
+}
+div{
+  margin-left: 200px;
+  padding: 1px 16px;
+}
+h1{
+  font-family: 'Audiowide',cursive;
+  font-size: 30pt;
+}
+h3{
+  font-family: 'Righteous',cursive;
+  font-size: 20pt;
+}
+p{
+  font-family: 'Boogaloo',cursive;
+  font-size: 16pt;
+}
